@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Yrd. Doç. Dr. Aziz ÇALIŞKAN</title>
+
+    <link rel="stylesheet" href="../public/css/index.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .feed-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .social-post {
+            background: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #efefef;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #eee;
+            background-image: url('../public/images/akdenizuniversitesi1.jpg');
+            background-size: cover;
+            background-position: center;
+            margin-right: 12px;
+            border: 1px solid #dbdbdb;
+        }
+
+        .user-info h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin: 0;
+            color: #262626;
+        }
+
+        .user-info span {
+            font-size: 0.8rem;
+            color: #8e8e8e;
+        }
+
+        .post-media {
+            width: 100%;
+            background-color: #fafafa;
+        }
+
+        .post-media img {
+            width: 100%;
+            display: block;
+            max-height: 600px;
+            object-fit: contain;
+        }
+
+        .post-content {
+            padding: 15px;
+        }
+
+        .caption {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .caption strong {
+            margin-right: 5px;
+        }
+
+        .comment {
+            font-size: 0.9rem;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #efefef;
+            line-height: 1.5;
+        }
+
+        .comment strong {
+            margin-right: 5px;
+            color: #262626;
+        }
+
+        .carousel-scroll {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+        }
+
+        .carousel-scroll img {
+            scroll-snap-align: center;
+            min-width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            .feed-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="../index.html" class="logo">
+                <span class="logo-title">Yrd. Doç. Dr. Aziz ÇALIŞKAN</span>
+                <span class="logo-subtitle">Akademisyen & Araştırmacı</span>
+            </a>
+
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
+                    <li class="nav-item"><a href="gonderiler.html" class="nav-link">Gönderiler</a></li>
+                    <li class="nav-item"><a href="oduller.html" class="nav-link">Ödüller</a></li>
+                    <li class="nav-item"><a href="makaleler.html" class="nav-link">Makaleler</a></li>
+                    <li class="nav-item"><a href="galeri.html" class="nav-link active">Galeri</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="iletisim.html" class="nav-link contact-btn">İletişim</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main style="background-color: #fafafa; min-height: 100vh;">
+        <section class="page-header" style="background: black; color: white; border-bottom: 1px solid #333;">
+            <div class="container">
+                <h1>Galeri</h1>
+                <p>Akademik etkinlikler, konferanslar ve özel anlardan kareler.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="feed-container">
+
+                <!-- Post 1: GastroMakale -->
+                <article class="social-post">
+                    <div class="post-header">
+                        <div class="user-avatar"
+                            style="background-image: url('../public/images/GastroMakale&ŞefSüleymanEnginYazıları1.jpg');">
+                        </div>
+                        <div class="user-info">
+                            <h4>Yrd. Doç. Dr. Aziz ÇALIŞKAN</h4>
+                            <span>Gastro Makale & Şef Süleyman Engin Yazıları</span>
+                        </div>
+                    </div>
+                    <div class="post-media">
+                        <div class="carousel-scroll">
+                            <img src="../public/images/GastroMakale&ŞefSüleymanEnginYazıları1.jpg" alt="Post Image 1">
+                            <img src="../public/images/GastroMakale&ŞefSüleymanEnginYazıları2.jpg" alt="Post Image 2">
+                            <img src="../public/images/GastroMakale&ŞefSüleymanEnginYazıları3.jpg.jpg" alt="Post Image 3">
+                            <img src="../public/images/GastroMakale&ŞefSüleymanEnginYazıları4.jpg.jpg" alt="Post Image 4">
+                            <img src="../public/images/GastroMakale&ŞefSüleymanEnginYazıları5.jpg.jpg" alt="Post Image 5">
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="caption">
+                            <strong>Gastro Makale & Şef Süleyman Engin Yazıları</strong>
+                            Çok mutluyum. 😀<br><br>
+                            Gelin sizi göğsümüzü kabartan, gururlandıran ve de mutlu eden muhteşem bir başarı hikayesi
+                            ile tanıştırayım. <br>
+                            Aziz, Doğu Akdeniz Üniversitesi Gastronomi ve Mutfak Sanatları Bölümü Glütensiz sınıf
+                            öğrencilerimden.<br>
+                            Uluslararası kamoyu tarafından dünyanın en iyi gastronomi okullarından biri olarak seçilen
+                            okulumuz DAÜ Gastronomi'den geçen dönem mezun ettik kendisini.<br>
+                            Aziz'le sınıfta tanıştığımda; özellikle glütensiz mutfak dersini seçtiğini ve ilerde,
+                            yaptığım gibi parmakla gösterilecek işlere imza atmak isteyen bir şef olma hedefinin
+                            olduğunu söyledi.<br>
+                            Nitekim bugün geldiğimiz nokta hepimizi gururlandıp, mutlu eden örnek bir başarı hikayesine
+                            imza attı. <br>
+                            Aziz; İnternational İnnovation, İnvention, Creation Exhibition bilimsel projeler
+                            yarışmasında
+                            127 grub 400 katilimci ve 150 den fazla bilim insani arasında "Glütensiz Un" projesiyle
+                            birinci seçilerek altın madalya almayı başardı.<br>
+                            İşin diğer onur verici bir tarafı ise 150'den fazla profesör ve doçentin projesini de geçmiş
+                            olması. <br>
+                            Bir kez daha anladım ki biz eğitimcilerin öğrenciler üzerinde ki rolü ve iyi birer örnek
+                            olmamız, geleceğimiz olan gençlerinin geleceğini belirleyecek projelere imza atmalarına
+                            vesile olabiliyor.<br>
+                            Tebrikler Aziz.<br>
+                            Congratulations Aziz. 👏🏼👏🏼👨🏽‍🍳🧿<br>
+                            Bize bu gururu yaşattığın için teşekkür ederiz.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 2: Viva Voce -->
+                <article class="social-post">
+                    <div class="post-header">
+                        <div class="user-avatar" style="background-image: url('../public/images/VivaVoce1.jpg');"></div>
+                        <div class="user-info">
+                            <h4>Mohd Hafiz Hanafiah</h4>
+                            <span>via Yrd. Doç. Dr. Aziz ÇALIŞKAN</span>
+                        </div>
+                    </div>
+                    <div class="post-media">
+                        <div class="carousel-scroll">
+                            <img src="../public/images/VivaVoce1.jpg" alt="Viva Voce 1">
+                            <img src="../public/images/VivaVoce2.jpg" alt="Viva Voce 2">
+                            <img src="../public/images/VivaVoce3.jpg" alt="Viva Voce 3">
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="caption">
+                            <strong>Mohd Hafiz Hanafiah</strong>
+                            Congratulations to Dr-to-be Aziz Çalışkan on successfully completing his Viva Voce. It has
+                            been quite some time since he approached me for assistance with data analysis at Starbucks
+                            Seksyen 9. Alhamdullah, his data analysis writeup is accepted as it is. <br>
+                            Right from the beginning, I could sense his strong determination to excel in his PhD
+                            journey, and he has indeed accomplished it. I am surprised to see him purposely come to
+                            Puncak Alam to meet me. So, I requested him to share his experience with my own PhD students
+                            who are preparing for their upcoming Viva Voce.<br>
+                            I am extremely proud of you, my dear brother.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 3: Viva Olgun -->
+                <article class="social-post">
+                    <div class="post-header">
+                        <div class="user-avatar" style="background-image: url('../public/images/vivaolgun.jpg');"></div>
+                        <div class="user-info">
+                            <h4>Yrd. Doç. Dr. Aziz ÇALIŞKAN</h4>
+                            <span>Doktora Savunması</span>
+                        </div>
+                    </div>
+                    <div class="post-media">
+                        <img src="../public/images/vivaolgun.jpg" alt="Viva Olgun">
+                    </div>
+                    <div class="post-content">
+                        <div class="caption">
+                            <strong>Yrd. Doç. Dr. Aziz ÇALIŞKAN</strong>
+                            Bugün, "Formulated Wild Carob Chocolate Bar, Its Storage Quality Assessment And
+                            Acceptability Using The Theory Of Planned Behavior" başlıklı tezimi başarıyla sunarak
+                            doktora unvanını hak etmiş bulunmaktayım. Bu tezim KKTC keçi boynuzu (harnup) üzerine
+                            yapılmış en kapsamlı çalışmalardan biri olmanın haklı gururunu yaşatıyor. <br><br>
+                            Doktora sürecinde yürüttüğüm araştırma sonuçlarını, saygın gastronomi ve gıda mühendisliği
+                            dergilerinde yayımlayarak, bilimsel camiaya kabul ettirdim. Ayrıca, "Düşük Enerjili Keci
+                            Boynuzu (Harnup) Unu" ile Malezya'da katıldığımız "2. Uluslararası Araştırma İcat ve
+                            İnovasyon Sergisi 2022" bilimsel yarışmasında gümüş madalya kazanarak, KKTC'nin, kulturunun
+                            ve keçi boynuzunun uluslararası platformda tanıtımına katkı sağladım.<br><br>
+                            Bu süreç boyunca, desteklerini esirgemeyen sevgili aileme, arkadaşlarıma, KKTC Milli Eğitim
+                            Bakanlığı'na ve sayın Hayri Orcana, saygı ve teşekkürlerimi sunarım.
+                        </div>
+                        <div class="comment">
+                            <strong>Olgun Guvenlier</strong>
+                            Sadece bilimsel bir çalışma olarak değerli değil, aynı zamanda harnupun dünyadaki
+                            bilinirliğini arttırması için yapılmış en önemli araştırma. Ülkemizin tanınması için çok
+                            önemli bir araştırma. <br>
+                            Ayrıca Kıbrıs içerisinde düşündüğümüzde, harnup üretiminde en üst noktada olan köyümüz
+                            Tatlısu ve Tatlısudaki üreticiler için de çok önemli bir çalışma.<br>
+                            Üstelik Aziz Çalışkan bunu dünyanın diğer ucunda gidebileceği en uzak noktada başardı.
+                            Kendisi bu coğrafya için çok değerli bir bilim adamı, Onun bu ada ülkesine sahip çıktığı
+                            kadar bizim de ona sahip çıkmamız yaptıklarıyla gururlanmamız gerekiyor. <br>
+                            Tebrik ederim kardeşim, Allah yolunu açık etsin.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 4: Kuala Lumpur -->
+                <article class="social-post">
+                    <div class="post-header">
+                        <div class="user-avatar"
+                            style="background-image: url('../public/images/KualaLumpurInternationalconferenceonBusiness,Education,SocialSciencesandTechnologykonferansı.jpg');">
+                        </div>
+                        <div class="user-info">
+                            <h4>Yrd. Doç. Dr. Aziz ÇALIŞKAN</h4>
+                            <span>Kuala Lumpur International Conference</span>
+                        </div>
+                    </div>
+                    <div class="post-media">
+                        <img src="../public/images/KualaLumpurInternationalconferenceonBusiness,Education,SocialSciencesandTechnologykonferansı.jpg"
+                            alt="Kuala Lumpur Conference">
+                    </div>
+                    <div class="post-content">
+                        <div class="caption">
+                            <strong>Yrd. Doç. Dr. Aziz ÇALIŞKAN</strong>
+                            Bugun Kuala Lumpur International conference on Business, Education, Social Sciences and
+                            Technology konferansında sundugum "atık hindistan cevizi ununun kimyasal özellikleri ve
+                            gluten anali" makalesi konferansin en iyi makalesi ödulune layik görülmüştür.<br>
+                            Her zaman altini cizerek soyledigim konu glutensiz urunlerin ne denli arastirmaya acik olan
+                            bir konu oldugudur ve bilim dunyasi bu denli arastirmalari hep desteklemekte, umarim
+                            glutensiz mutfagi gluten intoleransi olan insanlar icin diyet lifi ve protein bakimindan
+                            daha zengin bir diyet haline gelistirebiliriz.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 5: Girne Üniversitesi -->
+                <article class="social-post">
+                    <div class="post-header">
+                        <div class="user-avatar"
+                            style="background-image: url('../public/images/girne.jpg');">
+                        </div>
+                        <div class="user-info">
+                            <h4>Yrd. Doç. Dr. Aziz ÇALIŞKAN</h4>
+                            <span>Girne Üniversitesi</span>
+                        </div>
+                    </div>
+                    <div class="post-media">
+                        <img src="../public/images/girne.jpg" alt="Girne Üniversitesi">
+                    </div>
+                    <div class="post-content">
+                        <div class="caption">
+                            <strong>Yrd. Doç. Dr. Aziz ÇALIŞKAN</strong>
+                            Bugün itibarıyla Girne Üniversitesi Turizm Fakültesi, Gastronomi ve Mutfak Sanatları Anabilim Dalı'nda Yardımcı Doçent Doktor unvanını almaya hak kazandım.<br><br>
+                            Bu süreçte emeği geçen herkese içten teşekkürlerimi sunarım.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 6: Arası Bilgi ve Beceri Yarışması -->
+                <article class="social-post">
+                    <div class="post-header">
+                        <div class="user-avatar"
+                            style="background-image: url('../public/images/ArasıBilgiveBeceriYarışmas.jpg');">
+                        </div>
+                        <div class="user-info">
+                            <h4>Yrd. Doç. Dr. Aziz ÇALIŞKAN</h4>
+                            <span>Meslek Liseleri Arası Bilgi ve Beceri Yarışması</span>
+                        </div>
+                    </div>
+                    <div class="post-media">
+                        <div class="carousel-scroll">
+                            <img src="../public/images/ArasıBilgiveBeceriYarışmas.jpg" alt="Bilgi ve Beceri Yarışması 1">
+                            <img src="../public/images/ArasıBilgiveBeceriYarışmas2.jpg" alt="Bilgi ve Beceri Yarışması 2">
+                            <img src="../public/images/ArasıBilgiveBeceriYarışmas3.jpg" alt="Bilgi ve Beceri Yarışması 3">
+                            <img src="../public/images/ArasıBilgiveBeceriYarışmas4.jpg" alt="Bilgi ve Beceri Yarışması 4">
+                            <img src="../public/images/ArasıBilgiveBeceriYarışmas5.jpg" alt="Bilgi ve Beceri Yarışması 5">
+                            <img src="../public/images/ArasıBilgiveBeceriYarışmas6.jpg" alt="Bilgi ve Beceri Yarışması 6">
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="caption">
+                            <strong>KKTC Mesleki Teknik Öğretim Dairesi YİYECEK İÇECEK VE KONAKLAMA HİZMETLERİ (TURİZM) ALANI, SERVİS DALI BİLGİ VE BECERİ YARIŞMASI GERÇEKLEŞTİRİLDİ...</strong>
+                            Yiyecek İçecek ve Konaklama Hizmetleri (Turizm) Alanı, Servis Dalı Meslek Liseleri Arası Bilgi ve Beceri Yarışması 30 Nisan 2026 tarihinde Doğu Akdeniz Üniversitesi'nde gerçekleştirildi.<br><br>
+                            KKTC Mesleki Teknik Öğretim Dairesi YİYECEK İÇECEK VE KONAKLAMA HİZMETLERİ (TURİZM) ALANI, SERVİS DALI BİLGİ VE BECERİ YARIŞMASI GERÇEKLEŞTİRİLDİ... Yiyecek İçecek ve Konaklama Hizmetleri (Turizm) Alanı, Servis Dalı Meslek Liseleri Arası Bilgi ve Beceri Yarışması 30 Nisan 2026 tarihinde Doğu Akdeniz Üniversitesi'nde gerçekleştirildi.
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <h3>Yrd. Doç. Dr. Aziz ÇALIŞKAN</h3>
+                <p>Mutfak Sanatları ve Gastronomi alanında akademik çalışmalar ve araştırmalar.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="gonderiler.html">Gönderiler</a></li>
+                    <li><a href="makaleler.html">Makaleler</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>İletişim</h4>
+                <a href="mailto:azizcaliskan96@gmail.com" class="footer-mail"><i class="fas fa-envelope"></i>
+                    azizcaliskan96@gmail.com</a>
+                <div class="social-icons-footer">
+                    <a href="https://www.instagram.com/azizcaliskan25/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.researchgate.net/profile/Aziz-Caliskan-3" target="_blank"><i
+                            class="fab fa-researchgate"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Yrd. Doç. Dr. Aziz ÇALIŞKAN | Tüm Hakları Saklıdır</p>
+        </div>
+    </footer>
+
+    <script src="../public/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+/* Ana içerik alanı */
+.main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Ana Başlık (H1) */
+.main h1 {
+  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Her bir gönderi bölümü */
+.main section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Bölüm Başlıkları (H2) */
+.main section h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #e8491d;
+  color: #333;
+}
+
+/* Alt Başlıklar (H3) */
+.main section h3 {
+  font-size: 1.3em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Paragraflar */
+.main section p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Liste Stilleri */
+.main section ul {
+  list-style: disc inside;
+  margin: 10px 0 15px 20px;
+  color: #444;
+}
+
+/* Liste Elemanları */
+.main section ul li {
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
