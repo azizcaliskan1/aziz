@@ -1,8 +1,3 @@
-/**
- * Professional Cookie Consent Manager
- * Handles consent banner, preference modal, and cookie logic.
- */
-
 const CookieConsent = {
     KEY: 'cookie_consent_preferences',
 
